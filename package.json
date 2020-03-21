@@ -1,0 +1,52 @@
+{
+  "name": "ft-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@blueprintjs/core": "^3.19.1",
+    "axios": "^0.19.2",
+    "bson": "^4.0.3",
+    "jquery": "^3.4.1",
+    "mobx": "^5.14.2",
+    "mobx-react": "^6.1.4",
+    "react": "^16.11.0",
+    "react-document-title": "^2.0.3",
+    "react-dom": "^16.11.0",
+    "react-markdown": "^4.3.1",
+    "react-mde": "^8.1.0",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.2.0",
+    "react-ui-sortable-tree": "^2.6.15",
+    "sass-loader": "^8.0.2",
+    "turndown": "^6.0.0",
+    "turndown-plugin-gfm": "^1.0.2"
+  },
+  "scripts": {
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-decorators": "^7.6.0",
+    "copy-paste-cli": "^1.0.1",
+    "customize-cra": "^0.8.0",
+    "node-sass": "^4.13.1",
+    "react-app-rewired": "^2.1.4"
+  }
+}

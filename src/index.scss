@@ -1,0 +1,242 @@
+@import "~normalize.css";
+@import "~@blueprintjs/core/lib/css/blueprint.css";
+@import "~@blueprintjs/icons/lib/css/blueprint-icons.css";
+@import "~@blueprintjs/core/lib/scss/variables";
+@import '~react-mde/lib/styles/scss/react-mde-all.scss';
+
+body
+{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB',
+  'Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial, sans-serif, 'Apple Color Emoji',
+  'Segoe UI Emoji', 'Segoe UI Symbol';
+}
+
+.title
+{
+    color:$blue1;
+}
+
+.editorbox
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 100vh;
+  overflow-y: scroll;
+  .sidebar
+  {
+    flex: 2;
+    background-color: #313131;
+    display: flex;
+    flex-direction: column;
+    .m-tree-container
+    {
+      flex:19;
+    }
+    .toolbar
+    {
+      flex: 1;
+      min-height: 40px;
+      background-color: #ca3e47;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+  .notelist
+  {
+    flex: 2;
+    background-color: #414141;
+    overflow-y:auto;
+    justify-content: space-between;
+    display:flex;
+    flex-direction: column;
+    ;
+    .toolbar
+    {
+      flex:1;
+      min-height: 40px;
+      display:flex;
+      justify-content: left;
+      border-radius: 2px;
+      background-color: #ca3e47;
+      box-shadow: 0 4px 8px 0 rgba(204, 189, 189, 0.2), 0 6px 20px 0 rgba(219, 200, 200, 0.19);
+    }
+    .selected-list
+    {
+      flex: 19;
+      display: flex;
+      color: #ccc;
+      flex-direction: column;
+      .item
+      {
+        line-height: 1.5;
+        word-wrap: break-word;
+        cursor: pointer;
+        border-left: 1px solid #313131;
+        border-radius: 3px;
+        padding: 10px;
+
+        &:hover
+        {
+          background-color:#525252;
+        }
+      }
+      #active-note
+      {
+        color:#ca3e47;
+        background-color: #525252;
+      }
+    }
+
+  }
+  
+  .notepage
+  {
+    flex: 5;
+    display: flex;
+    flex-direction: column;
+    .contentbox
+    {
+      flex :49;
+      padding: 20px;
+      overflow-y:auto;
+      overflow-x:hidden;
+      color: #ccc;
+      background-color: #525252;
+      .mde
+      {
+        color: #ccc;
+        background-color: #525252;
+      }
+      img
+      {
+        max-width:100%;
+      }
+    }
+    .toolbar
+    {
+      min-height:40px;
+      background-color:#313131;
+      border: solid #313131;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      padding-left: 10px;
+      padding-right: 10px;
+      box-shadow: 0 5px 5px 0 rgba(143, 24, 24, 0.116);
+    }
+  }
+  
+}
+
+
+.tree
+{
+  position:fixed;
+  top:0;
+  left:0;
+  bottom:0;
+  width:300px;
+  overflow-x:hidden;
+  overflow-y:auto;
+  background-color: #212528;
+}
+.code
+{
+  background-color: black;
+}
+.m-node.placeholder
+{
+  border: 1px dashed #1385e5;
+}
+
+.m-node .inner 
+{
+  color: #ccc;
+  font-size: 13px;
+  font-family: Menlo;
+}
+
+.m-node .node 
+{
+  display: inline-block;
+  width: 100%;
+  padding: 4px 5px;
+
+}
+
+span.is-active 
+{
+  color: #ca3e47!important;
+}
+.login-page
+{
+  .container
+  {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .logobox
+  {
+    margin-top :50px;
+    margin-bottom:50px;
+    text-align: center;
+    .title
+    {
+      font-size:32px;
+      color: black;
+    }
+    .formbox
+    {
+      padding:20px;
+    }
+    img.log
+    {
+      max-width: 200px;
+      max-height: 200px;
+    }
+  }
+
+}
+
+.nav-bar
+{
+  display:none;
+}
+
+@media screen and (max-width:800px)
+{
+  .editorbox
+  {
+    padding-top: 40px;
+  }
+  .nav-bar
+  {
+    height:50px;
+    position: fixed;
+    width:100%;
+    color: #ccc;
+    background-color: black;
+    display: flex;
+    font-size: 20px;
+    > *
+    {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+    }
+    .left, .right
+    {
+      max-width:20%;
+
+    }
+  }
+}
