@@ -74,6 +74,7 @@ export default class NotePage extends Component
                     </div>
                     <div className="contentbox">
                         {this.props.store.is_editing ?
+                        
                         <ReactMde 
                             className = 'mde'
                             selectedTab={this.state.selectedTab}

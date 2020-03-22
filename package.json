@@ -4,8 +4,11 @@
   "private": true,
   "dependencies": {
     "@blueprintjs/core": "^3.19.1",
+    "ansi-regex": "^5.0.0",
     "axios": "^0.19.2",
+    "babel-loader": "^8.1.0",
     "bson": "^4.0.3",
+    "chalk": "^3.0.0",
     "jquery": "^3.4.1",
     "mobx": "^5.14.2",
     "mobx-react": "^6.1.4",

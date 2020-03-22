@@ -14,7 +14,7 @@ class AppState
         const token = window.localStorage.getItem("FTTREE-TOKEN");
         if(token) api.setToken(token);
     }
-    @observable appname = "EasyStarter";  // 应用名 
+    @observable appname = "tree-markdown";  // 应用名 
     @observable is_editing = false;  //是否正在修改
     @observable editing_id = 0;  // 修改的文章id?
     @observable search_text = "";// 

@@ -37,7 +37,7 @@ export default class NavBar extends Component
                     onClick={()=>this.props.store.view_type--}></Button>}
                 
                 </div>
-                <div className="center">{title}</div>\
+                <div className="center">{title}</div>
                 <div className="right"></div>
             </div>;
     }
