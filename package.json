@@ -5,7 +5,7 @@
   "dependencies": {
     "@blueprintjs/core": "^3.19.1",
     "ansi-regex": "^5.0.0",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "babel-loader": "^8.1.0",
     "bson": "^4.0.3",
     "chalk": "^3.0.0",
